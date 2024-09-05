@@ -83,6 +83,10 @@ body {
     animation-delay: .7s;
 }
 
+.home-alpha h3 span {
+    color: #7091e6;
+}
+
 .home-content h3:nth-of-type(2) {
     margin-bottom: 20px;
     animation: slideTop 1s ease forwards;
@@ -100,7 +104,8 @@ body {
 
 
 .home-alpha p {
-    font-size: 16px;
+    font-size: 20px;
+    color: #050505;
     opacity: 0;
     margin-bottom: 20px;
     animation: slideLeft 1s ease forwards 1.3s;
@@ -184,6 +189,7 @@ body {
  
 }
 
+
 /* .home-social::before {
     content: '';
     position: absolute;
@@ -216,6 +222,369 @@ body {
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    max-width: 700px;
+    margin-left: 20px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+}
+
+.about-text h2 {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #050505;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    color: #050505;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.about-btn-box a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #8697c4;
+    border: 2px solid #050505;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #050505;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.about-btn-box a:nth-child():hover {
+    color: #ede8f5;
+}
+
+.about-btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ede8f5;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.services {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.container {
+    padding: 90px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #0fa4af, 1px 1px 40px #afdde5;
+}
+
+.service-list div i {
+    font-size: 250px;
+    margin-top: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #050505;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #8697c4;
+    border: 2px solid #050505;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #050505;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.read:hover {
+    background: #8697c4;
+    color: #050505;
+}
+
+.services-list div:hover {
+    transform: translateY(-10px);
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-skills {
+    width: 600px;
+    height: 500px;
+    padding: 25px 70px;
+    font-size: 60px;
+    padding-bottom: 70px;
+    align-items: center;
+}
+
+.heading-skills {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    align-items: center;
+    
+}
+
+.bar {
+    font-size: 15px; 
+}
+
+.Technical-bars .bar {
+    margin-top: 40px; /* Fixed margin-top syntax */
+}
+
+.Technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.Technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.Technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.Technical-bars .bar .info span { /* Corrected class name */
+    font-size: 20px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+/* line bar */
+.Technical-bars .bar .progress-line span {
+    height: 100%;
+    background: #050505; 
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards; /* Use correct cubic-bezier syntax */
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+/* Correct class names to match the structure */
+.progress-line.HTML span {
+    width: 95%;
+}
+
+.progress-line.CSS span {
+    width: 80%;
+}
+
+.progress-line.JavaScript span {
+    width: 75%;
+}
+
+.progress-line.React span {
+    width: 80%;
+}
+
+/* percentage */
+.progress-line span::after { /* Ensure this targets the correct class */
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #050505;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 10px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.HTML span::after {
+    content: "95%";
+}
+
+.progress-line.CSS span::after {
+    content: "80%";
+}
+
+.progress-line.JavaScript span::after {
+    content: "75%";
+}
+
+.progress-line.React span::after {
+    content: "80%";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #050505;
+    top: -20px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.Radial-bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.Radial-bars .Radial-bar {
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.Radial-bars .Radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.Radial-bars .Radial-bar .progress-bar {
+    stroke-width: 10;
+    stroke: #ffffff; /* Changed to stroke for consistency */
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+ 
+/* percentage path */
+.path {
+    stroke-width: 5;
+    stroke: #050505; /* Changed to stroke for consistency */
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1 { animation: animate-path1 1s 1s linear forwards; }
+.path-2 { animation: animate-path2 1s 1s linear forwards; }
+.path-3 { animation: animate-path3 1s 1s linear forwards; }
+.path-4 { animation: animate-path4 1s 1s linear forwards; }
+
+.Radial-bars .Percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.Radial-bars .Text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%); /* Corrected transform */
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+ 
+
+
+
+
 
 
 
@@ -297,5 +666,51 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+/* technical-bars */
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* progress-line span::before */
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* radial-bars .radial-bar .progress-bar  */
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+/* animate-path1 */
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50;;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 175;;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 125;;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 75;;
     }
 }
