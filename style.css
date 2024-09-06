@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #3d52a0;
 }
 
 .logo {
@@ -385,6 +386,7 @@ body {
     font-size: 60px;
     padding-bottom: 70px;
     align-items: center;
+    
 }
 
 .heading-skills {
@@ -395,6 +397,7 @@ body {
     margin-bottom: 25px;
     font-size: 40px;
     align-items: center;
+    
     
 }
 
@@ -442,6 +445,7 @@ body {
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards; /* Use correct cubic-bezier syntax */
     transform: scaleX(0);
     transform-origin: left;
+    
 }
 
 /* Correct class names to match the structure */
@@ -475,6 +479,7 @@ body {
     opacity: 0;
 }
 
+
 .progress-line.HTML span::after {
     content: "95%";
 }
@@ -506,48 +511,46 @@ body {
     opacity: 0;
 }
 
-.Radial-bars {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.Radial-bars .Radial-bar {
+.radials-bars {
     width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
+    
+   
 }
 
-.Radial-bars .Radial-bar svg {
+.radials-bars svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 120px;
     height: 160px;
+    
 }
 
-.Radial-bars .Radial-bar .progress-bar {
+.progress-bar {
     stroke-width: 10;
-    stroke: #ffffff; /* Changed to stroke for consistency */
+    stroke: #ffffff;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
+    display: flex;
+    justify-content: start;
+    
 }
- 
-/* percentage path */
+
 .path {
     stroke-width: 5;
-    stroke: #050505; /* Changed to stroke for consistency */
+    stroke: #050505;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
     stroke-linecap: round;
+    
 }
 
 .path-1 { animation: animate-path1 1s 1s linear forwards; }
@@ -555,7 +558,7 @@ body {
 .path-3 { animation: animate-path3 1s 1s linear forwards; }
 .path-4 { animation: animate-path4 1s 1s linear forwards; }
 
-.Radial-bars .Percentage {
+.percentage-bar {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -566,18 +569,19 @@ body {
     opacity: 0;
 }
 
-.Radial-bars .Text {
+.text-bar {
     width: 100%;
     position: absolute;
     text-align: center;
     left: 50%;
     bottom: -5px;
-    transform: translateX(-50%); /* Corrected transform */
+    transform: translateX(-50%);
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
+
 
 
  
@@ -714,3 +718,4 @@ body {
         stroke-dashoffset: 75;;
     }
 }
+ 
