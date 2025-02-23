@@ -142,45 +142,91 @@
     <section class="resume active">
         <div class="resume-container">
             <div class="resume-box">
-            <h2>Why Hire Me?</h2>
-            <p class="desc">I’m a Computer Engineering graduate with expertise in web development, SEO, and e-commerce. I specialize in front-end development using HTML, CSS, and JavaScript, and have experience optimizing websites for search engines. Additionally, I’m skilled in managing e-commerce platforms like Shopify and WooCommerce, focusing on creating user-friendly and functional websites. Passionate about delivering efficient solutions, I also bring strong organizational skills from my background in executive assistance.</p>
-
-            <button class="resume-btn active">Experience</button>
-            <button class="resume-btn">Education</button>
-            <button class="resume-btn">Skills</button>
-            <button class="resume-btn">Certifications</button>
-            <button class="resume-btn">About Me</button>
-        </div>
-
-        <div class="resume-box">
-            <div class="resume-details experience active">
-                <h2 class="heading">My <span>Experience</span></h2>
-                <p class="desc">experience description</p>
+                <h2>Why Hire Me?</h2>
+                <p class="desc">I’m a Computer Engineering graduate with expertise in web development, SEO, and e-commerce. I specialize in front-end development using HTML, CSS, and JavaScript, and have experience optimizing websites for search engines. Additionally, I’m skilled in managing e-commerce platforms like Shopify and WooCommerce, focusing on creating user-friendly and functional websites. Passionate about delivering efficient solutions, I also bring strong organizational skills from my background in executive assistance.</p>
+    
+                <button class="resume-btn active" data-target="experience">Experience</button>
+                <button class="resume-btn" data-target="education">Education</button>
+                <button class="resume-btn" data-target="training">Training</button>
+                <button class="resume-btn" data-target="skills">Skills</button>
             </div>
-        
-            <div class="resume-details education">
-                <h2 class="heading">My <span>Education</span></h2>
-                <p class="desc">experience description</p>
+    
+            <div class="resume-box">
+                <div class="resume-detail experience active" data-content="experience">
+                    <h2 class="heading">My <span>Experience</span></h2>
+    
+                    <div class="resume-item">
+                        <p class="year">April 2023 - July 2023</p>
+                        <h3>Back-End Developer</h3>
+                        <p class="company">Hybrid Succeed Inc.</p>
+                        <p class="desc">Developed and maintained back-end applications using PHP and MySQL. Collaborated with front-end developers to ensure seamless integration of user interfaces and back-end functionality. Conducted regular testing and debugging to identify and resolve issues.</p>
+                    </div>
+    
+                    <div class="resume-item">
+                        <p class="year">November 2024 - Present</p>
+                        <h3>Software Engineer</h3>
+                        <p class="company">Accenture</p>
+                        <p class="desc">Developing and maintaining software applications for clients in various industries. Collaborating with cross-functional teams to design and implement solutions that meet client requirements. Conducting regular testing and debugging to ensure software quality and performance.</p>
+                    </div>
+                </div>
+    
+                <div class="resume-detail education" data-content="education">
+                    <h2 class="heading">My <span>Education</span></h2>
+    
+                    <div class="resume-item">
+                        <p class="year">July 2014 - October 2024</p>
+                        <h3>Bachelor of Science in Computer Engineering</h3>
+                        <p class="company">FEU Institute of Technology</p>
+                    </div>
+                </div>
+    
+                <div class="resume-detail training" data-content="training">
+                    <h2 class="heading">My <span>Training</span></h2>
+    
+                    <div class="resume-item">
+                        <p class="year">October 2023 - November 2024</p>
+                        <h3>Full-Stack Developer</h3>
+                        <p class="company">GoIT Philippines</p>
+                        <p class="desc">Designed and developed web applications from concept to deployment. Utilized HTML, CSS, JavaScript, and PHP to create responsive and interactive websites. Conducted regular code reviews and testing to ensure software quality and performance.</p>
+                    </div>
+    
+                    <div class="resume-item">
+                        <p class="year">April 2024 - May 3, 2024</p>
+                        <h3>Front-End Developer</h3>
+                        <p class="company">One Code Camp Academy</p>
+                        <p class="desc">Developed user-friendly interfaces for web applications using HTML, CSS, and JavaScript. Collaborated with designers to implement visual elements and animations.</p>
+                    </div>
+    
+                    <div class="resume-item">
+                        <p class="year">April 2024 - June 2024</p>
+                        <h3>Search Engine Optimization (SEO)</h3>
+                        <p class="company">Prova Virtual Assistance</p>
+                        <p class="desc">Optimized websites for search engines to improve visibility and ranking. Conducted keyword research and analysis to identify target keywords.</p>
+                    </div>
+    
+                    <div class="resume-item">
+                        <p class="year">October 2024</p>
+                        <h3>Windows 2019 - Server Administration & Automation</h3>
+                        <p class="company">Nexus Cloud IT Solution</p>
+                        <p class="desc">Designed and implemented Windows Server 2019 infrastructure for clients. Configured and managed Active Directory, DNS, DHCP, and other server roles.</p>
+                    </div>
+                </div>
+    
+                <div class="resume-detail skills" data-content="skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <ul class="desc">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>PHP & MySQL</li>
+                        <li>SEO Optimization</li>
+                        <li>Windows Server Administration</li>
+                        <li>E-commerce (Shopify, WooCommerce)</li>
+                    </ul>
+                </div>
             </div>
-        
-            <div class="resume-details skills">
-                <h2 class="heading">My <span>Skills</span></h2>
-                <p class="desc">experience description</p>
-            </div>
-        
-            <div class="resume-details certifications">
-                <h2 class="heading">My <span>Certifications</span></h2>
-                <p class="desc">experience description</p>
-            </div>
-                
-            <div class="resume-details about">
-                <h2 class="heading">About <span>Me</span></h2>
-                <p class="desc">experience description</p>
-            </div>
-
         </div>
     </section>
-
+    
+    
     <script src="script.js"></script>
 
 
