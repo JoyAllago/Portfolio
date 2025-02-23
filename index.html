@@ -20,17 +20,26 @@
         <a href="#" class="logo">Joy Portfolio's</a>
 
         <nav class="navbar">
-            <a href="#" class="active"> Home </a>
+            <a href="#Home" class="active"> Home </a>
             <a href="#About"> About </a>
-            <a href="#Skills"> SKills </a>
-            <a href="#Services"> Services </a>
+            <a href="#Services"> SKills </a>
+            <a href="#Resume"> Services </a>
             <a href="#Portfolio"> Portfolio </a>
             <a href="#contact"> Contact </a>
         </nav>
 
     </header>
 
-    <section class="home">
+    <!-- <div class="bars-box">
+        <div class="bars" style="--i:6;"></div> 
+        <div class="bars" style="--i:5;"></div> 
+        <div class="bars" style="--i:4;"></div> 
+        <div class="bars" style="--i:3;"></div> 
+        <div class="bars" style="--i:2;"></div> 
+        <div class="bars" style="--i:1;"></div> 
+    </div> -->
+
+    <section class="home active">
         <div class="home-alpha">
             <h3>Hey, It's Me</h3>
             <h1>Mary Joy S. Allago</h1>
@@ -50,13 +59,13 @@
         </div>
 
         <div class="home-img">
-            <img src="Photo.jpg" alt="Portrait of Mary Joy S. Allago">
+            <img src="photo/profile.jpg" alt="Portrait of Mary Joy S. Allago">
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="Photo.jpg" alt="Portrait of Mary Joy S. Allago">
+            <img src="photo/profile.jpg" alt="Portrait of Mary Joy S. Allago">
         </div>
 
         <div class="about-text">
@@ -71,7 +80,7 @@
     </section>
 
     <!-- service section -->
-    <section class="services active">
+    <section class="services">
         <h2 class="heading">My <span> Services </span></h2>
         <div class="services-container">
             <div class="services-box">
@@ -139,7 +148,7 @@
     </section>
 
     <!-- resume section -->
-    <section class="resume active">
+    <section class="resume">
         <div class="resume-container">
             <div class="resume-box">
                 <h2>Why Hire Me?</h2>
@@ -214,17 +223,181 @@
     
                 <div class="resume-detail skills" data-content="skills">
                     <h2 class="heading">My <span>Skills</span></h2>
-                    <ul class="desc">
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>PHP & MySQL</li>
-                        <li>SEO Optimization</li>
-                        <li>Windows Server Administration</li>
-                        <li>E-commerce (Shopify, WooCommerce)</li>
-                    </ul>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-html5'></i>
+                        <span>HTML5</span>
+                    </div>
+                   
+                    <div class="resume-list">
+                        <i class='bx bxl-css3'></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-javascript'></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-react'></i>
+                        <span>React.js</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-vuejs'></i>
+                        <span>Vue.js</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-tailwind-css'></i>
+                        <span>Tailwind CSS</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-nodejs'></i>
+                        <span>Node.js</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-mongodb'></i>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-python'></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="resume-list">
+                        <i class='bx bxl-java'></i>
+                        <span>Java</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Portfolio Section -->
+<section class="portfolio>
+    <h2 class="heading">My <span>Portfolio</span></h2>
+
+    <div class="portfolio-container">
+        <!-- Portfolio Details -->
+        <div class="portfolio-detail active">
+            <p class="numb">01</p>
+            <h3>Front-End Project</h3>
+            <p>Project Description</p>
+            <div class="tech">
+                <p>HTML5, CSS3, JavaScript</p>
+            </div>
+            
+            <div class="live-github">
+                <a href="#"><i class='bx bx-arrow-back'></i>    </a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+
+        <!-- <div class="portfolio-detail">
+            <p class="numb">02</p>
+        </div>
+
+        <div class="portfolio-detail">
+            <p class="numb">03</p>
+        </div>
+
+        <div class="portfolio-detail">
+            <p class="numb">04</p>
+        </div>
+
+        <div class="portfolio-detail">
+            <p class="numb">05</p>
+        </div> -->
+    </div> <!-- End portfolio-container -->
+
+    <!-- Portfolio Image Carousel -->
+    <div class="portfolio-box">
+        <div class="portfolio-carousel">
+
+            <div class="img-slide">
+                <img src="photo/pic1.jpg" alt="Project 1">
+            </div>
+
+            <!-- <div class="img-slide">
+                <img src="photo.jpg" alt="Project 2">
+            </div>
+
+            <div class="img-slide">
+                <img src="photo.jpg" alt="Project 3">
+            </div>
+
+            <div class="img-slide">
+                <img src="photo.jpg" alt="Project 4">
+            </div>
+
+            <div class="img-slide">
+                <img src="photo.jpg" alt="Project 5">
+            </div> -->
+        </div>
+    </div> <!-- End portfolio-box -->
+
+    <!-- Navigation Arrows -->
+    <div class="navigation">
+        <button class="arrow-left" title="Previous Slide"><i class='bx bx-chevron-left'></i></button>
+        <button class="arrow-right" title="Next Slide"><i class='bx bx-chevron-right'></i></button>
+    </div>
+
+</section> <!-- End Portfolio Section -->
+
+<!-- Contact Section -->
+ <section class="contact">
+    <div class="contact-container">
+        <div class="contact-box">
+            <h2>Let's Work Together</h2>
+            <p class="desc">I’m available for freelance projects and full-time opportunities. If you’re interested in working together, please feel free to reach out.</p>
+            
+            <div class="contact-detail">
+                <i class='bx bx-phone'></i>
+                <div class="detail">
+                    <p>Phone</p>
+                    <p>+639 541 902 473</p>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx bx-envelope'></i>
+                    <div class="detail">
+                    <p>Email</p>
+                    <p>maryjoyallago@gmail.com</p>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx bx-map'></i>
+                    <div class="detail">
+                    <p>Address</p>
+                    <p>Taguig City, Philippines</p>
+                </div>
+
+                <div class="contact-box">
+                    <form action="">
+                        <h2 class="heading">Contact <span>Me!</span></h2>
+                        <div class="field-box">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Phone Number" required>
+                            <input type="text" placeholder="Email" required>
+                            <textarea name="" id="" placeholder="Message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+ </section>
+
     
     
     <script src="script.js"></script>
