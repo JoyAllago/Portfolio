@@ -452,8 +452,6 @@ section {
     background: #C6E7FF;
 }
 
-
-
 .skills-detail {
     display: none;
     text-align: left;
@@ -510,16 +508,34 @@ section {
 }
 
 
-/* Left Section: skills Items */
-.skills-list {
+
+/* .skills-list {
     display: flex;
     flex-wrap: nowrap;
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-    gap: 1.5rem; /* Space between items */
-    width: 50%; /* Adjust width */
-    overflow-y: auto; /* Enables scrolling for this section */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem; 
+    width: 50%; 
+    overflow-y: auto; 
     max-height: 500px;
     padding-right: 1rem;
+    border: 2px solid #c9d5f5;
+} */
+.skills-items {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #c9d5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1.5rem; /* Add space between each box */
+    max-width: 30vh; /* Adjust width */
+    max-height: 30vh;
+    flex-shrink: 0; /* Prevents items from shrinking */
+    margin: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 200;
 }
 
 .skills-item {

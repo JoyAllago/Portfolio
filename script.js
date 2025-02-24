@@ -1,5 +1,5 @@
-const resumeBtns = document.querySelectorAll('.resume-btn');
-const resumeDetails = document.querySelectorAll('.resume-detail');
+const resumeBtns = document.querySelectorAll('.skills-btn');
+const resumeDetails = document.querySelectorAll('.skills-detail');
 const navlink = document.querySelectorAll('header nav a');
 const logoLink = document.querySelector('.logo');
 const sections = document.querySelectorAll('section');
