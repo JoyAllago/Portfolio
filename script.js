@@ -28,20 +28,11 @@ logoLink.addEventListener('click', () => {
 });
 
 resumeBtns.forEach((btn, idx) => {
-    btn.addEventListener("click", () => {
-        // Remove 'active' class from all buttons
-        resumeBtns.forEach((btn) => btn.classList.remove("active"));
-
-        // Add 'active' class to the clicked button
-        btn.classList.add("active");
-
-        // Remove 'active' class from all resume details
-        resumeDetails.forEach((detail) => detail.classList.remove("active"));
-
-        // Add 'active' class to the corresponding resume detail
-        if (resumeDetails[idx]) {
-            resumeDetails[idx].classList.add("active");
-        }
+    btn.addEventListener('click', () => {
+        resumeBtns.forEach(btn => btn.classList.remove('active'));
+        btn.classList.add('active');
+        resumeDetails.forEach(detail => detail.classList.remove('active'));
+        resumeDetails[idx].classList.add('active');
     });
 });
 
