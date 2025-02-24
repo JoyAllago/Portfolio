@@ -401,8 +401,8 @@ section {
     transform: rotate(225deg);
 }
 
-/* Resume Section */
-.resume-container {
+/* skills Section */
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -410,7 +410,7 @@ section {
     margin-top: 30px;
 }
 
-.resume-box {
+.skills-box {
     flex: 1 1 45%;
     background: #ffffff;
     padding: 2rem;
@@ -419,18 +419,18 @@ section {
     text-align: center;
 }
 
-.resume-box h2 {
+.skills-box h2 {
     font-size: 2rem;
     color: var(#ffffff);
 }
 
-.resume-box p.desc {
+.skills-box p.desc {
     font-size: 1rem;
     color: var(#ffffff);
     margin-top: 10px;
 }
 
-.resume-btn {
+.skills-btn {
     padding: 10px 20px;
     margin: 10px;
     background: #b0c4fc;
@@ -443,24 +443,24 @@ section {
     transition: 0.3s;
 }
 
-.resume-btn:hover {
+.skills-btn:hover {
     background: #C6E7FF;
     color: #fff;
 }
 
-.resume-btn:hover, .resume-btn.active {
+.skills-btn:hover, .skills-btn.active {
     background: #C6E7FF;
 }
 
 
 
-.resume-detail {
+.skills-detail {
     display: none;
     text-align: left;
     margin-top: 20px;
 }
 
-.resume-detail.active {
+.skills-detail.active {
     display: block;
 }
 
@@ -468,19 +468,19 @@ section {
     .services-container {
         grid-template-columns: 1fr;
     }
-    .resume-container {
+    .skills-container {
         flex-direction: column;
     }
-    .resume-box {
+    .skillse-box {
         width: 100%;
     }
 }
 
-.resume-details.active {
+.skills-details.active {
     display: block;
 }
 
-.resume-list {
+.skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -488,22 +488,22 @@ section {
     overflow: auto;
 }
 
-.resume-list::-webkit-scrollbar {
+.skills-list::-webkit-scrollbar {
     width: .7rem;
 }
 
-.resume-list::-webkit-scrollbar-thumb {
+.skills-list::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 1rem;
 }
 
-.resume-list::-webkit-scrollbar-thumnb {
+.skills-list::-webkit-scrollbar-thumnb {
     background: #7091e6;
 }
 
-.resume-container {
+.skills-container {
     display: flex;
-    gap: 2rem; /* Space between .resume-list and .resume-details */
+    gap: 2rem; /* Space between .skills-list and .skills-details */
     max-height: 500px; /* Adjust as needed */
     overflow-y: auto;
     padding: 4rem;
@@ -513,8 +513,8 @@ i need in horizontal per box also meron gap for each box
 
 
 
-/* Left Section: Resume Items */
-.resume-list {
+/* Left Section: skills Items */
+.skills-list {
     display: flex;
     flex-wrap: nowrap;
     grid-template-columns: repeat(2, 1fr); /* 2 items per row */
@@ -525,7 +525,7 @@ i need in horizontal per box also meron gap for each box
     padding-right: 1rem;
 }
 
-.resume-item {
+.skills-item {
     background: #fff;
     border-radius: 1rem;
     padding: 2.5rem;
@@ -538,13 +538,13 @@ i need in horizontal per box also meron gap for each box
     flex-shrink: 0; /* Prevents items from shrinking */
 }
 
-.resume-item:hover {
+.skills-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Right Section: Resume Details */
-.resume-details {
+/* Right Section: skills Details */
+.skills-details {
     width: 50%;
     background: #fff;
     border-radius: 1rem;
@@ -557,38 +557,38 @@ i need in horizontal per box also meron gap for each box
 }
 
 /* Custom Scrollbars */
-.resume-list::-webkit-scrollbar,
-.resume-details::-webkit-scrollbar {
+.skills-list::-webkit-scrollbar,
+.skills-details::-webkit-scrollbar {
     width: 8px;
 }
 
-.resume-list::-webkit-scrollbar-thumb,
-.resume-details::-webkit-scrollbar-thumb {
+.skills-list::-webkit-scrollbar-thumb,
+.skills-details::-webkit-scrollbar-thumb {
     background: #7091e6;
     border-radius: 10px;
 }
 
 
 @media (max-width: 768px) {
-    .resume-container {
+    .skills-container {
         flex-direction: column;
     }
-    .resume-list, .resume-details {
+    .skills-list, .skills-details {
         width: 100%;
     }
-    .resume-list {
+    .skills-list {
         grid-template-columns: 1fr; /* 1 column on small screens */
     }
 }
 
 
-.resume-detail {
+.skills-detail {
     text-align: center;
     margin-bottom: 40px;
 }
 
 
-.resume-list {
+.skills-list {
     
     /* display: flex;
     align-items: center;
@@ -617,18 +617,18 @@ i need in horizontal per box also meron gap for each box
     max-width: 25vh;
 }
 
-.resume-list:hover {
+.skills-list:hover {
     transform: scale(1.05);
 
 }
 
-.resume-list i {
+.skills-list i {
     font-size: 24px;
     color: #007bff;
     margin-right: 8px;
 }
 
-.resume-list span {
+.skills-list span {
     font-size: 16px;
     font-weight: 500;
     color: #333;
