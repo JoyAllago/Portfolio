@@ -11,7 +11,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.min.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.min.js"></script>
+     
 </head>
 
 <body>
@@ -43,17 +44,17 @@
         <div class="home-alpha">
             <h1>Hey, It's Me Joy</h1>
 
-            <div class="change-text">
-                <h3>And I'm a </h3>
-                <h3>
-                    <span class="word">Web Designer</span>
-                    <span class="word">Front-End Developer</span>
-                    <span class="word">Back-End Developer</span>
-                    <span class="word">UI/UX Developer</span>
-                    <span class="word">SEO</span>
-                    <span class="word">E-Commerce</span>
-                </h3>
-            </div>
+            <!-- <div class="change-text"> -->
+                <h2>And I'm a
+                
+                    <span style="--i:6;" data-text="Web designer">Web Designer</span>
+                    <span style="--i:5;" data-text="Front-End Developer">Front-End Developer</span>
+                    <span style="--i:4;" data-text="Back-End Developer">Back-End Developer</span>
+                    <span style="--i:3;" data-text="UI/UX Developer">UI/UX Developer</span>
+                    <span style="--i:2;" data-text="SEO">SEO</span>
+                    <span style="--i:1;" data-text="E-Commerce">E-Commerce</span>
+                </h2>
+            <!-- </div> -->
             
 
             <p> I’m a Computer Engineering graduate with expertise in front-end development, SEO, and e-commerce. Proficient in HTML, CSS, and JavaScript, I build responsive, user-friendly websites </p>
@@ -68,6 +69,7 @@
             <a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
             <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
             <a href="https://www.linkedin.com"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.github.com"><i class='bx bxl-github'></i></a>
         </div>
 
         <div class="home-img">
@@ -294,13 +296,32 @@
     
 
     <!-- Portfolio Section -->
-<section class="portfolio" id="Portfolio">
+<section class="portfolio active" id="Portfolio">
     <h2 class="heading"> My <span> Portfolio </span></h2>
 
     <div class="portfolio-container">
 
+        <!-- <div class="portfolio-box">
+            <img src="photo/1.jpg" alt="">
+            <div class="portfolio-layer">
+                <p class="numb">01</p>
+                <h4>Front-End Project</h4>
+                <p>details</p>
+
+                <div class="tech">
+                    <p>HTML5, CSS3, JavaScript</p>
+                </div>
+
+                <div class="live-github">
+                    <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                    <a href="#"><i class='bx bxl-github'></i><span>Github  Respository</span></a>
+                </div>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
         <div class="portfolio-box">
-            <img src="photo/pic1.jpg" alt="">
+            <img src="photo/2.jpg" alt="">
             <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>details</p>
@@ -309,24 +330,15 @@
         </div>
 
         <div class="portfolio-box">
-            <img src="photo/pic2.jpg" alt="">
+            <img src="photo/3.jpg" alt="">
             <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>details</p>
                 <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
-        </div>
+        </div> -->
 
-        <div class="portfolio-box">
-            <img src="photo/pic3.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>details</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="portfolio-box">
+        <!-- <div class="portfolio-box">
             <img src="photo/pic4.jpg" alt="">
             <div class="portfolio-layer">
                 <h4>Web Design</h4>
@@ -351,7 +363,7 @@
                 <p>details</p>
                 <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
-        </div>
+        </div> -->
 
         <!-- Portfolio Details
         <div class="portfolio-detail active">
@@ -384,16 +396,36 @@
             <p class="numb">05</p>
         </div> -->
     <!-- </div> End portfolio-container -->
+    <div class="portfolio-box">
+
+        <div class="portfolio-detail active">
+            <p class="numb">01</p>
+            <h4>Front-End Project</h4>
+            <p>details</p>
+
+            <div class="tech">
+                <p>HTML5, CSS3, JavaScript</p>
+            </div>
+
+            <div class="live-github">
+                <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                <a href="#"><i class='bx bxl-github'></i><span>Github  Respository</span></a>
+            </div>
+            <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+        </div>
+    </div>
 
     <!-- Portfolio Image Carousel -->
-    <!-- <div class="portfolio-box">
+    <div class="portfolio-box">
         <div class="portfolio-carousel">
 
             <div class="img-slide">
-                <img src="photo/pic1.jpg" alt="Project 1">
-            </div> -->
+                <div class="img-item">
+                    <img src="photo/1.jpg" alt="Project 1">
+                </div>
+            </div> 
 
-            <!-- <div class="img-slide">
+            <div class="img-slide">
                 <img src="photo.jpg" alt="Project 2">
             </div>
 
@@ -407,9 +439,9 @@
 
             <div class="img-slide">
                 <img src="photo.jpg" alt="Project 5">
-            </div> -->
-        <!-- </div>
-    </div> End portfolio-box -->
+            </div> 
+        </div>
+    </div> 
 
     <!-- Navigation Arrows -->
     <div class="navigation">
